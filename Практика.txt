@@ -1,0 +1,62 @@
+задание 1:
+x = int(input ("Введите число: "))
+if x % 2 == 0:
+   print ("Четное")
+else:
+    print ("Нечетное")
+
+Задание 2:
+cels = float(input ("Введите градусы цельсия: "))
+far = (12 * 9/5) + 32
+print ("Градусы фаренгейта: ", far)
+
+Задание 3:
+UserInput = int(input ("Введите число: "))
+if UserInput % 5 == 0 and UserInput % 7 == 0:
+   print ("11")
+elif UserInput % 5 == 0 and UserInput % 7 != 0:
+   print ("01") 
+elif UserInput % 5 != 0 and UserInput % 7 == 0:
+   print ("10")
+elif UserInput % 5 != 0 and UserInput % 7 != 0:
+   print ("00")
+
+Задание 4: 
+a = float(input ("Введите коэффициент при x^2: "))
+b = float(input ("Введите коэффициент при x: "))
+c = float(input ("Введите свободный коэффициент: "))
+d = b ** 2 - 4*a*c
+if d > 0:
+  x1 = (-b + (b ** 2 - 4*a*c) ** (1/2)) / 2 / a
+  x2 = (-b - (b ** 2 - 4*a*c) ** (1/2)) / 2 / a
+     print ("корень X1 = ", x1)
+     print ("корень X2 = ", x2)
+elif d==0:
+  x3 = -b / 2 / a
+     print ("Корень X = "/ x3)
+else:
+    print ("Корней нет")
+
+Задание 6:
+print ("Введите список чисел: ")
+a = input()
+b = a.split(' ')
+num = len(set(b))
+  print ("количество элементов: ", num)
+
+Задание 5:
+import random
+x = random.randint(1,100)
+k = int(input("Вам нужно угадать число от 1 до 100. Какое вы хотите количество попыток: "))
+while k != 0:
+   try1 = int(input("Отгадайте: "))
+   if try1 == x:
+     print ("Ты угадал:((")
+     break
+   elif try1 > x:
+     print ("Отгадываемое число меньше")
+   elif try1 < x:
+     print ("Отгадываемое число больше")
+   k = k - 1
+if k == 0:
+    print ("Попытки кончились. Ты проиграл:)")
