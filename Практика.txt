@@ -39,9 +39,9 @@ else:
 
 Задание 6:
 print ("Введите список чисел: ")
-a = input()
-b = a.split(' ')
-num = len(set(b))
+x = input()
+y = a.split(' ')
+num = len(set(y))
   print ("количество элементов: ", num)
 
 Задание 5:
